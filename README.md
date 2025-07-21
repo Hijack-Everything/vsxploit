@@ -1,11 +1,11 @@
-# VSPloit
+# VSXPloit
 **Weaponized VS Code Tunnel in both *vscode-cli* and *vscode-server* for Red Team Covert Operations** • *Inspired by APT Tactics*
 
 ## 🎯 Overview
 
-**VSPloit** is a red team tool that automates and extends a technique first seen in real-world attacks, where **Advanced Persistent Threats (APTs)** abused Visual Studio Code’s `code tunnel` feature to gain remote access into developer environments.
+**VSXPloit** is a red team tool that automates and extends a technique first seen in real-world attacks, where **Advanced Persistent Threats (APTs)** abused Visual Studio Code’s `code tunnel` feature to gain remote access into developer environments.
 
-Where APTs used it for persistence and command-and-control (C2), **VSPloit enhances this tactic** for red teamers by:
+Where APTs used it for persistence and command-and-control (C2), **VSXPloit enhances this tactic** for red teamers by:
 
 > 🚫 Eliminating the need for C2 infrastructure  
 > ✅ Using **Microsoft’s own infrastructure (VS Code Tunnel)**  
@@ -20,11 +20,11 @@ This framework is directly inspired by threat intelligence research from:
 - 🔍 **SentinelOne** – [Case study of VS Code abuse in developer-targeted espionage](https://www.sentinelone.com/labs)
 
 > These reports revealed that **code-server**, `code tunnel`, and other developer tools are being used as covert backdoors.  
-> **VSPloit** turns that real-world TTP into a red team-ready framework with reproducible automation and operational stealth.
+> **VSXPloit** turns that real-world TTP into a red team-ready framework with reproducible automation and operational stealth.
 
 ## 🛰️ Infrastructure Overview
 
-VSPloit leverages **official Microsoft and GitHub services** for its entire operation flow — no external command-and-control infrastructure is needed.
+VSXPloit leverages **official Microsoft and GitHub services** for its entire operation flow — no external command-and-control infrastructure is needed.
 
 ### 🔧 Operational Architecture
 
@@ -38,9 +38,9 @@ VSPloit leverages **official Microsoft and GitHub services** for its entire oper
 📌 *This diagram demonstrates how red teams can operate without traditional implants or infrastructure — fully leveraging trusted platforms already whitelisted in most networks.*
 
 
-## 🚨 Why VSPloit?
+## 🚨 Why VSXPloit?
 
-| Feature | APTs (Observed) | VSPloit (Red Team Enhancement) |
+| Feature | APTs (Observed) | VSXPloit (Red Team Enhancement) |
 |--------|------------------|------------------------------|
 | VS Code Tunnel Access | ✅ Used for backdoor sessions | ✅ Automated and scripted |
 | Persistence via CLI | ✅ Manual reconnection | ✅ Autonomous tunnel setup |
@@ -72,8 +72,8 @@ Create a single `.exe` or ELF payload via `PyInstaller` with included build scri
 ### 1. Clone
 
 ```bash
-git clone https://github.com/Hijack-Everything/vsploit.git
-cd vsploit
+git clone https://github.com/Hijack-Everything/vsxploit.git
+cd vsxploit
 ```
 
 ### 2. Install Dependencies
@@ -104,7 +104,7 @@ quality: "stable"
 debug: false
 ```
 
-> 🔎 **Note**: The `commit_id` is **also the VS Code version**. This is how Microsoft’s CLI tunnel binaries are structured. An example config.yaml can be found in the vsploit/ directory.
+> 🔎 **Note**: The `commit_id` is **also the VS Code version**. This is how Microsoft’s CLI tunnel binaries are structured. An example config.yaml can be found in the vsxploit/ directory.
 
 #### `detector.yaml`
 
@@ -119,7 +119,7 @@ detect:
   - match: "Open this link in your browser"
     upload: true
 ```
-> 🔎 **Note**: The original detector.yaml **verified as of 22-07-2025** can be found in vsploit/ directory. The file detector.yaml does not contains any secrets hence can be publicly shared and updated.
+> 🔎 **Note**: The original detector.yaml **verified as of 22-07-2025** can be found in vsxploit/ directory. The file detector.yaml does not contains any secrets hence can be publicly shared and updated.
 
 
 ## 🛠️ Compile to Single Executable
@@ -153,19 +153,19 @@ Output will be placed in `dist/`.
 
 ## 🧠 Credits & Threat Attribution
 
-VSPloit is heavily inspired by incident response and threat intelligence research from:
+VSXPloit is heavily inspired by incident response and threat intelligence research from:
 
 - **Fortinet**
 - **Cyble**
 - **SentinelOne**
 
 > These vendors documented the abuse of `code tunnel` by APTs, showing how trusted developer tooling can become a covert channel.  
-> VSPloit transforms that TTP into a **red team-ready**, reproducible framework — **no C2 needed**.
+> VSXPloit transforms that TTP into a **red team-ready**, reproducible framework — **no C2 needed**.
 
 
 ## ⚠️ Legal & Ethical Disclaimer
 
-**VSPloit is intended solely for use in authorized penetration testing, red teaming, and adversary simulation.**
+**VSXPloit is intended solely for use in authorized penetration testing, red teaming, and adversary simulation.**
 
 Unauthorized use is strictly prohibited and may violate computer crime laws including the **CFAA**, **UK Computer Misuse Act**, and local regulations.
 
