@@ -69,7 +69,7 @@ Create a single `.exe` or ELF payload via `PyInstaller` with included build scri
 ## Directory Structure
 
 ```
-VSPloit/
+VSXPloit/
 ├── config.yaml          # Configuration file with commit ID, GitHub repo info, and download settings
 ├── detector.yaml        # Detection rules and automated interaction instructions for the VSCode tunnel
 ├── main.py              # Core script to download, extract, run VSCode CLI tunnel, detect outputs, and upload logs
