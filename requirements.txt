@@ -1,0 +1,5 @@
+pyinstaller==6.6.0
+pexpect==4.9.0
+requests==2.31.0
+pyyaml==6.0.2
+pywin32==305; sys_platform == 'win32'

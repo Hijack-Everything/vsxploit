@@ -1,0 +1,13 @@
+commit_id: "2901c5ac6db8a986a5666c3af51ff804d05af0d4"
+github_token: "github_pat_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+repo_owner: "YourGitHub" # Replace with your GitHub username (example: "Hijack-Everything")
+repo_name: "YourRepo" # Replace with your repository name (example: "vsxploit")
+branch: "main" # Replace with your branch name (example: "main")
+target_file: "README.md" # Replace with the file you want to upload to (example: "README.md")
+download_url_format: "https://update.code.visualstudio.com/commit:{commit_id}/{platform_path}/{quality}"  #For vscode-server download
+#download_url_format: "https://code.visualstudio.com/sha/download?build={quality}&os={platform_path}"
+extracted_path: "~\\.vscode-server" # path for windows
+#extracted_path: "~/.vscode-server" #path for linux
+extracted_bin: "code"
+quality: "stable"
+debug: false

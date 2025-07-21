@@ -1,0 +1,23 @@
+detect:
+  - match: "use the code" # Detects the start of the VSCode server installation
+    upload: true
+    action: ["enter"]
+
+  - match: "login" # Detects the login prompt
+    upload: true
+    action: ["down", "enter"]
+
+  - match: "tunnel started" # Detects the successful start of the tunnel
+    upload: true
+    action: ["enter"]
+
+  - match: "What would you like to call this machine?" # Detects the machine name prompt
+    upload: true
+    action: ["string:kali", "enter"]
+
+  - match: "Open this link in your browser" # Detects the link to open in the browser
+    upload: true
+  
+  - match: "would you like to log in to Visual Studio" # Detects the login prompt for VSCode
+    upload: false
+    action: ["down", "enter"]
