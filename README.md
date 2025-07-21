@@ -170,6 +170,8 @@ VSPloit is heavily inspired by incident response and threat intelligence researc
 Unauthorized use is strictly prohibited and may violate computer crime laws including the **CFAA**, **UK Computer Misuse Act**, and local regulations.
 
 
-## 🔬 Authors
+## 👤 Author
 
-- **Red Team Automation by:** Suman Chakraborty or Sumz
+- **Suman Chakraborty (aka Sumz)**
+- Offensive Security Researcher | Red Teamer
+- [Website](https://sumz.co.in) | [Linkedin](https://www.linkedin.com/in/suman-chakraborty-b857901b1) | [Email](me@sumz.co.in)
