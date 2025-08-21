@@ -4,8 +4,9 @@ repo_owner: "YourGitHub" # Replace with your GitHub username (example: "Hijack-E
 repo_name: "YourRepo" # Replace with your repository name (example: "vsxploit")
 branch: "main" # Replace with your branch name (example: "main")
 target_file: "README.md" # Replace with the file you want to upload to (example: "README.md")
-download_url_format: "https://update.code.visualstudio.com/commit:{commit_id}/{platform_path}/{quality}"  #For vscode-server download
-#download_url_format: "https://code.visualstudio.com/sha/download?build={quality}&os={platform_path}"
+download_url_format: "https://update.code.visualstudio.com/commit:{commit_id}/{platform_path}/{quality}"  #For vscode-server download--- REPLACE commit_id, platform_path, quality
+#download_url_format: "https://code.visualstudio.com/sha/download?build={quality}&os={platform_path}" #This is an alteranate download format that can be used, commonly used and documented
+#Examples ['download_url_format: "https://update.code.visualstudio.com/commit:e3550cfac4b63ca4eafca7b601f0d2885817fd1f/cli-linux-x64/stable"', '"download_url_format: "https://update.code.visualstudio.com/commit:e3550cfac4b63ca4eafca7b601f0d2885817fd1f/cli-win32-x64/stable"', 'download_url_format: "https://code.visualstudio.com/sha/download?build=stable&os=cli-win32-x64', 'download_url_format: "https://code.visualstudio.com/sha/download?build=stable&os=linux-x64'
 extracted_path: "~\\.vscode-server" # path for windows
 #extracted_path: "~/.vscode-server" #path for linux
 extracted_bin: "code"
