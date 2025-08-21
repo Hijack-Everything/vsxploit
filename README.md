@@ -109,8 +109,8 @@ repo_owner: "YourGitHub"
 repo_name: "loot"
 branch: "main"
 target_file: "README.md"
-download_url_format: "https://update.code.visualstudio.com/commit:{commit_id}/{platform_path}/{quality}"
-extracted_path: "~/.vscode-server6"  # Windows: ~\\.vscode-server6
+download_url_format: "https://update.code.visualstudio.com/commit:{commit_id}/{platform_path}/{quality}" #Here commit_id can be found from vscode ui-> help ->about -> commit_id
+extracted_path: "~/.vscode-server"  # Windows: ~\\.vscode-server
 extracted_bin: "code"
 quality: "stable"
 debug: false
