@@ -79,6 +79,11 @@ VSXPloit/
 └── dist/                # Output folder where the compiled executable is generated after build
 ```
 
+## Requirements
+```
+Python <= 3.11.8 > 3.10.0
+```
+
 ## ⚙️ Setup Instructions
 
 ### 1. Clone
